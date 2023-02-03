@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Users Control Panel</title>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5">
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <!-- (A) SIDEBAR -->
+    <div id="pgside">
+      <!-- (A1) BRANDING OR USER -->
+      <!-- LINK TO DASHBOARD OR LOGOUT -->
+      <div id="pguser">
+        <i class="txt">MY ADMIN</i>
+      </div>
+
+      <!-- (A2) MENU ITEMS -->
+      <a href="index.html">
+        <i class="ico">&#9733;</i>
+        <i class="txt">Home</i>
+      </a>
+      <a href="usersTable.html" class="current" >
+        <i class="ico">&#9733;</i>
+        <i class="txt">Users</i>
+      </a>
+      <a href="contactusTable.html">
+        <i class="ico">&#9728;</i>
+        <i class="txt">Contact Us</i>
+      </a>
+    </div>
+
+    <!-- (B) MAIN -->
+    <main id="pgmain">
+    <style>
+    /* (A) Contact Us TABLE */
+    table.table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: center;
+    }
+    table.table tr:nth-child(odd) { background: #f2f2f2; }
+    table.table th { padding: 10px; }
+
+    /* (X) DOES NOT MATTER */
+    * {
+      font-family: Arial, Helvetica, sans-serif;
+      box-sizing: border-box;
+    }
+    </style>
+    <a href="registration.html" style="background-color:black;color: white; padding:10px;">New</a><br/><br/><br/>
+    <!-- (A) Contact Us TABLE -->
+    <table class="table">
+      <thead>
+      <tr>
+        <th>#</th> 
+        <th>Name</th>
+        <th>Email</th>
+        <th>Address</th>
+        <th>Gender</th>
+        <th>Phone</th>
+        <th>Subject</th>
+        <th>Department</th>
+      </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Name</td>
+          <td>email@gmail.com</td>
+          <td>Address</td>
+          <td>Gender</td>
+          <td>Phone</td>
+          <td>Subject</td>
+          <td>Department</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br><br>
+
+    </main>
+  </body>
+</html>

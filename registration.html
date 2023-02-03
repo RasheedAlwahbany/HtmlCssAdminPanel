@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Us Control Panel</title>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5">
+    <link rel="stylesheet" href="index.css">
+    <style>
+    /* (A) FORM */
+    .form {
+      max-width: 600px; /* optional */
+      padding: 20px;
+      border: 1px solid #eee;
+      background: #f2f2f2;
+    }
+
+    /* (B) FIELDS & LABELS */
+    .form label, .form input, .form textarea, .form select, .form button {
+      display: block;
+      width: 100%;
+    }
+    .form label { padding: 10px 0; }
+    .form input, .form textarea, .form select { padding: 10px; }
+
+    /* (C) BUTTONS */
+    input[type=button], input[type=submit], button {
+      font-size: 1em;
+      font-weight: 700;
+      padding: 10px;
+      border: 0;
+      color: #fff;
+      background: #870000;
+      cursor: pointer;
+    }
+    input[type=submit] { margin-top: 20px; }
+
+    /* (X) DOES NOT MATTER */
+    * {
+      font-family: Arial, Helvetica, sans-serif;
+      box-sizing: border-box;
+    }
+    </style>
+  
+  </head>
+  <body>
+    <!-- (A) SIDEBAR -->
+    <div id="pgside">
+      <!-- (A1) BRANDING OR USER -->
+      <!-- LINK TO DASHBOARD OR LOGOUT -->
+      <div id="pguser">
+        <i class="txt">MY ADMIN</i>
+      </div>
+
+      <!-- (A2) MENU ITEMS -->
+      <a href="index.html">
+        <i class="ico">&#9733;</i>
+        <i class="txt">Home</i>
+      </a>
+      <a href="usersTable.html" class="current" >
+        <i class="ico">&#9733;</i>
+        <i class="txt">Users</i>
+      </a>
+      <a href="contactusTable.html">
+        <i class="ico">&#9728;</i>
+        <i class="txt">Contact Us</i>
+      </a>
+    </div>
+
+    <!-- (B) MAIN -->
+    <main id="pgmain">
+    <form class="form">
+    <label th>Name</label>
+      <input type="text" id="" placeholder="Name">
+      <label for="">Email</label>
+      <input type="email" id="" placeholder="Email">
+      <label th>Address</label>
+      <input type="text" id="" placeholder="Address">
+      <label th>Gender</label>
+      Male<input type="radio" value="">
+      Female<input type="radio" value="">
+      <label th>Subject</label>
+      <input type="radio" value="">Subject 1
+      <input type="radio" value="">Subject 2
+      <label th>Departments</label>
+      <input type="radio" value="">Department 1
+      <input type="radio" value="">Department 2
+      <label th>Phone</label>
+      <input type="number" id="" placeholder="Phone">
+      <input type="submit" value="Submit">
+    </form>
+    <br><br>
+
+    </main>
+  </body>
+</html>
